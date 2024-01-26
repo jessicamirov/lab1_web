@@ -24,13 +24,78 @@
         }
 
         /*add your custom css rules here*/
+        #start {
+            background-color: rgb(168, 28, 255);
+            display: flex;
+            align-items: center; 
+            justify-content: center;
+            font-size: 15px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #resBtn {
+            background-color: rgb(52, 0, 224);
+        }
+        
+        .button {
+            width: 60px;
+            height: 60px;
+            font-size: 30px;
+            padding: 10px;  
+            margin: 1px;    
+            border: 1px solid rgb(0, 0, 0);      
+            cursor: pointer;
+        }
+
+        body {
+            text-align: center;
+        }
     </style>
 </head>
 
 <body class="dark:text-white light:text-black">
 
     <!-- your app code goes here -->
-
+    <div id="start">
+        <div>
+            <p>Lab 1</p>
+            <h1>Jessica's calculator</h1>
+        </div>
+    </div>
+    <div>
+        <button class="button">%</button>
+        <button class="button">CE</button>
+        <button class="button">C</button>
+        <button class="button">del</button>
+    </div>
+    <div>
+        <button class="button">7</button>
+        <button class="button">8</button>
+        <button class="button">9</button>
+        <button class="button">x</button>
+    </div>
+    <div>
+        <button class="button">4</button>
+        <button class="button">5</button>
+        <button class="button">6</button>
+        <button class="button">-</button>
+    </div>
+    <div>
+        <button class="button">1</button>
+        <button class="button">2</button>
+        <button class="button">3</button>
+        <button class="button">+</button>   
+    </div>
+    <div>
+        <button class="button">/</button>
+        <button class="button">0</button>
+        <button class="button">.</button>        
+        <button class="button" id="resBtn">=</button>
+    </div>
+    <div>
+        <p id="result"></p>
+    </div>
     <!-- special scripts for integration in App Gallery - must be placed at the bottom of the HTML after your code -->
     <script>
         // custom config for the MTW app 
